@@ -1,0 +1,10 @@
+{
+  "python.linting.enabled": true,
+  "python.formatting.provider": "autopep8",
+  "python.venvFolders": [".venv"],
+  "python.linting.pylintEnabled": true,
+  "python.pythonPath": "d:\\01_IT\\03_Python\\jupyter_vscode_template\\.venv\\Scripts\\python.exe"
+  //   "python.autoComplete.extraPaths": [
+  //     // python実行時のカレントフォルダのサブフォルダを羅列する
+  //   ]
+}

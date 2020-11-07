@@ -1,0 +1,83 @@
+:toc:
+
+= Jupyter Notebook VSCode Template
+
+== ■ 軌跡
+
+=== ▼ 一度だけ実施すること
+
+==== ◎ Pythonセットアップ
+
+* Minicondaインストール
+* `PATH` 設定
+* `pip install pipenv `
+* 環境変数 `PIPENV_VENV_IN_PROJECT` に `true` を設定
+
+==== ◎ VSCode拡張機能のインストール
+
+* Python
+* Pipenv Scripts
+
+
+=== ▼ テンプレートプロジェクト設定
+
+==== ◎ 共通
+
+```shell
+$ git init
+```
+
+==== ◎ Pythonのランタイム設定・環境作成
+
+```shell
+$ pipenv --python 3.X
+$ pipenv shell
+$ pipenv install \
+    jupyter \
+    pandas \
+    matplotlib \
+    seaborn \
+    numpy==1.19.3
+$ pipenv install --dev \
+    pylint \
+    ipython \
+    ipykernel
+```
+[%hardbreaks]
+※Pandas：データ解析ライブラリ
+※Matplotlib：データ解析用グラフ描画ライブラリ
+※seaborn：データ可視化ライブラリ
+※numpy==1.19.3：1.19.4はバグ（https://tinyurl.com/y3dm3h86)があり使えないための指定。
+
+
+
+
+== ■ メモ
+
+=== ▼ 仮想環境関連の操作
+
+```shell
+$ # 仮想環境へ入る
+$ pipenv shell # 抜けるときはexit
+$ # 仮想環境のパスが知りたい場合
+$ pipenv --venv
+$ # 仮想環境を削除する
+$ pipenv --rm
+$ # パッケージインストール ※バージョン指定は「==バージョン」と指定する
+$ pipenv install numpy==1.14
+```
+
+=== ▼ cloneした人が実行すること
+
+```shell
+$ # Pipfile.lockから環境の再現
+$ pipenv sync
+$ pipenv sync --dev    # 開発用パッケージ
+```
+
+export PS1='${debian_chroot:+($debian_chroot)}[\u@\h \W]\$ '
+
+== ■ 参考
+
+* https://qiita.com/y-tsutsu/items/54c10e0b2c6b565c887a[Pipenvを使ったPython開発まとめ
+]
