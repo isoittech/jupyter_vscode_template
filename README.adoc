@@ -2,32 +2,46 @@
 
 = Jupyter Notebook VSCode Template
 
+
+== ■ テンプレートの使い方
+
+. Github.com(https://github.com/new )で空の新規リポジトリを作る
+. git cloneしてcdする +
+`git clone https://github.com/isoittech/jupyter_vscode_template.git <<任意のプロジェクト名>>`
+. GitリポジトリのRemote URLを変更する +
+`git remote set-url origin https://github.com/xxxxxxxxxxxx/yyyyyyyyyy.git`
+. Pipfile.lockから仮想環境の再現
++
+```shell
+$ pipenv sync
+$ pipenv sync --dev    # 開発用パッケージ
+$ pipenv shell         # pipenv install でパッケージ追加する等の前処理として必要
+※$ exit                 # 仮想環境から抜ける
+```
+. あとは普通に開発・commit・pushする
+
 == ■ やったことの記録
 
-=== ▼ 一度だけ実施すること
-
-==== ◎ Pythonセットアップ
+=== ▼ Pythonセットアップ
 
 * Minicondaインストール
 * `PATH` 設定
-* `pip install pipenv `
+* `pip install pipenv` 実行
 * 環境変数 `PIPENV_VENV_IN_PROJECT` に `true` を設定
 
-==== ◎ VSCode拡張機能のインストール
+=== ▼ VSCode拡張機能のインストール
 
 * Python
 * Pipenv Scripts
 
 
-=== ▼ テンプレートプロジェクト設定
-
-==== ◎ 共通
+=== ▼ Git
 
 ```shell
 $ git init
 ```
 
-==== ◎ Pythonのランタイム設定・環境作成
+=== ▼ Pythonのランタイム設定・環境作成
 
 ```shell
 $ pipenv --python 3.X
