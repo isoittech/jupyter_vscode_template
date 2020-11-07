@@ -18,6 +18,8 @@ $ pipenv sync --dev    # 開発用パッケージ
 $ pipenv shell         # pipenv install でパッケージ追加する等の前処理として必要
 ※$ exit                 # 仮想環境から抜ける
 ```
+. `code .` を実行してVSCodeでプロジェクトを開く
+. VSCodeで `Shift+Ctrl+P` -> `Python: インタープリターを選択` から `.venv/Scripts/python.exe` を選択する
 . あとは普通に開発・commit・pushする
 
 == ■ やったことの記録
