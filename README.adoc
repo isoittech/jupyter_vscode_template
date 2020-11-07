@@ -2,7 +2,7 @@
 
 = Jupyter Notebook VSCode Template
 
-== ■ 軌跡
+== ■ やったことの記録
 
 === ▼ 一度だけ実施すること
 
@@ -47,7 +47,7 @@ $ pipenv install --dev \
 ※Pandas：データ解析ライブラリ
 ※Matplotlib：データ解析用グラフ描画ライブラリ
 ※seaborn：データ可視化ライブラリ
-※numpy==1.19.3：1.19.4はバグ（https://tinyurl.com/y3dm3h86)があり使えないための指定。
+※numpy==1.19.3：1.19.4はバグ（https://tinyurl.com/y3dm3h86 )があり使えないための指定。
 
 
 
