@@ -91,7 +91,14 @@ $ pipenv sync
 $ pipenv sync --dev    # 開発用パッケージ
 ```
 
-export PS1='${debian_chroot:+($debian_chroot)}[\u@\h \W]\$ '
+=== ▼ プロンプトに仮想環境名を出すマジナイ
+```shell
+$ vi ~/.bashrc
+-------
+export PS1='${VIRTUAL_ENV:+($(basename `echo $VIRTUAL_ENV`))}[\u@\h \W]\$ '
+-------
+$ source ~/.bashrc
+```
 
 == ■ 参考
 
