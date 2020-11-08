@@ -5,6 +5,20 @@
 
 == ■ テンプレートの使い方
 
+=== ▼ 前準備（当該端末で一度だけ）
+==== ◎ Pythonセットアップ
+
+* Miniconda3 or Anaconda3 インストール
+* `PATH` 設定
+* `pip install pipenv` 実行
+* 環境変数 `PIPENV_VENV_IN_PROJECT` に `true` を設定
+
+==== ◎ VSCode拡張機能のインストール
+
+* Python
+* Pipenv Scripts
+
+=== ▼ 本手順
 . Github.com(https://github.com/new )で空の新規リポジトリを作る
 . git cloneしてcdする +
 `git clone https://github.com/isoittech/jupyter_vscode_template.git <<任意のプロジェクト名>>`
@@ -22,7 +36,7 @@ $ pipenv shell         # pipenv install でパッケージ追加する等の前�
 . VSCodeで `Shift+Ctrl+P` -> `Python: インタープリターを選択` から `.venv/Scripts/python.exe` を選択する
 . あとは普通に開発・commit・pushする
 
-== ■ やったことの記録
+== ■ このテンプレを作る上でやったことの記録
 
 === ▼ Pythonセットアップ
 
