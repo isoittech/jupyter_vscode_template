@@ -2,6 +2,9 @@
 
 = Jupyter Notebook VSCode Template
 
+[%hardbreaks]
+Jupyter NotebookをVSCode上で使うときのプロジェクトテンプレート。
+※Windows向けに書いている。
 
 == ■ テンプレートの使い方
 
@@ -80,7 +83,23 @@ $ pipenv install --dev \
 ※numpy==1.19.3：1.19.4はバグ（https://tinyurl.com/y3dm3h86 )があり使えないための指定。
 
 
+== ■ 任意の追加手順
 
+=== ▼ Jupyter NotebookをPDF保存するための手順
+
+==== ◎ 環境作成
+. Pandocインストール +
+https://pandoc.org/installing.html
+. LaTeXレンダリングエンジン（XeLaTex）をインストール +
+https://miktex.org/download
+. VSCodeに拡張機能「vscode-pandoc」by Chris Chinchillaをインストール +
+※本家（DougFinke）は開発が2016で止まっているため。
+
+==== ◎ 実行
+. NotebookのエクスポートメニューからPDFを選択。 +
+※初回、パッケージをいくつもダウンロードさせられる。ダイアログ対応が面倒な場合は `Show always..` のチェックボックスをOFFにする。 +
+※初回だからなのか、A4 PDF 16ページ分を出力するのに、10分くらいかかった。 +
+　CPU：Core i7、 メモリ：16GB、 HDDはSSD。
 
 == ■ メモ
 
