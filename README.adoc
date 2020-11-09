@@ -102,6 +102,11 @@ https://miktex.org/download
 　CPU：Core i7、 メモリ：16GB、 HDDはSSD。 +
 　2回目は1分以内に終了。
 
+==== ◎ 参考URL
+* https://qiita.com/namoshika/items/63db972bfd1030f8264a[Jupyter Notebook で数式を美しく書く]
+* https://qiita.com/tbpgr/items/989c6badefff69377da7[Markdown記法 サンプル集
+]
+
 == ■ メモ
 
 === ▼ 仮想環境関連の操作
