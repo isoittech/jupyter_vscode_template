@@ -99,7 +99,8 @@ https://miktex.org/download
 . NotebookのエクスポートメニューからPDFを選択。 +
 ※初回、パッケージをいくつもダウンロードさせられる。ダイアログ対応が面倒な場合は `Show always..` のチェックボックスをOFFにする。 +
 ※初回だからなのか、A4 PDF 16ページ分を出力するのに、10分くらいかかった。 +
-　CPU：Core i7、 メモリ：16GB、 HDDはSSD。
+　CPU：Core i7、 メモリ：16GB、 HDDはSSD。 +
+　2回目は1分以内に終了。
 
 == ■ メモ
 
